@@ -1,0 +1,134 @@
+.body-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  height: 85%;
+  gap: 70px;
+  /* border: 2px solid black; */
+}
+
+.iphone-bg {
+  height: 100%;
+  z-index: 1;
+  width: 30%;
+  background-image: url(../assests/food.png);
+  background-repeat: no-repeat;
+  background-position:contain;
+  background-size: cover;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid black; */
+  z-index: 1;
+  height: 70%;
+  width: 60%;
+}
+
+.logo-content {
+  width: 120px;
+  height: 70px;
+  /* margin-top: 50px; */
+}
+
+.iphone{
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 47px;
+  color: white;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.des {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  word-spacing: 1.2px;
+  width: 450px;
+  line-height: 25px;
+  margin-top: 8px;
+  direction: ltr;
+}
+
+.content-btn {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 22px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: #000000 4px 4px 0 0;
+  width: 200px;
+  height: 40px;
+
+/* CSS */
+/* .button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+ 
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} */
+}
+
+.just{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+@media screen and (max-width: 1024px){
+  .body-content {
+    flex-direction: column;
+    padding: 40px;
+   
+  }
+  .iphone-bg {
+    width: 55%;
+  }
+  .text-content{
+    width: 150%;
+    height: 100%;
+    /* position: static; */
+  }
+  .des{
+    width: 100%;
+  }
+  .just{
+    justify-content: center;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 468px){
+  .logo-content{
+    display: none;
+}
+.iphone-bg{
+  width: 100%;
+}
+.text-content h1{
+  text-align: center;
+}
+}

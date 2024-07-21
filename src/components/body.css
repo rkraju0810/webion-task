@@ -1,0 +1,63 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body-container{
+    height: 89.5vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body-wrapper{
+    height: 91.5vh;
+    width: 100vw;
+    background-image: url('../assests/Map-UI.png.webp');
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.2;
+    display: flex;
+    position: absolute;
+}
+
+
+
+.bg-img{
+    height: 91.5vh;
+    width: 100vw;
+    background-color:#db0f0f;
+    clip-path: polygon(0% 100%,0% 18%,29% 28%,71% 0%,100% 0%,100% 100%);
+    position: absolute;
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 1024px){
+    .body-container{
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 456px){
+    .bg-img{
+        height:-webkit-fill-available;
+    }
+    .body-wrapper{
+        height:-webkit-fill-available;
+    }
+
+  
+
+
+}
+/* clip-path: polygon(0% 100%,0% 18%,29% 28%,71% 0%,100% 0%,100% 100%); */

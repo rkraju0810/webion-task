@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    height: 10.5vh;
+    width: 100vw;
+    padding: 10px;
+}
+
+.logo{
+    width:80px;
+    height: 35px;
+}
+.nav-btn{
+    font-size: 11px;
+    font-weight:500; 
+    background-color: red;
+    padding: 10px 22px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+
+@media screen and (max-width: 468px){
+    .nav-btn{
+        display: none;
+    }
+}
